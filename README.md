@@ -1,7 +1,5 @@
 # Pagination
-Application demonstrating a simple pagination using pure javascript.
-
-<br>
+Application using pagination to show comments on a post with pure javascript
 
 ### Home page preview
 

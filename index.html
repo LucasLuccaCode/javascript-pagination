@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/publication.css">
+  <link rel="stylesheet" href="/css/buttons.css">
+  <script src="/js/index.js" defer></script>
+  <title>Pagination</title>
+</head>
+<body>
+  <div class="c-pagination">
+    <header class="c-pagination__header">
+      <h1>Paginação</h1>
+    </header>
+
+    <main class="c-main">
+      <div class="c-post">
+        <div class="c-post__header">
+          <div class="c-post__header__profile"></div>
+          <h2>Mr Robot <span> 1 d</span></h2>
+          <div class="c-post__header__options"><span>...</span></div>
+        </div>
+        <div class="c-post__image"></div>
+        <div class="c-post__body">
+          <div class="c-post__body__like">
+            <img src="/public/img/like.png" alt="Like">
+            <span class="total-likes">87</span>
+            <a href="#" onclick="publication.addLike()">Curtir</a>
+          </div>
+          <a class="total-comments">0 comments</a>
+        </div>
+        <div class="c-post__comments"></div>
+        <div class="c-post__buttons">
+          <div data-controller="begin">&laquo;</div>
+          <div data-controller="prev">&lsaquo;</div>
+          <div class="c-post__buttons__numbers"></div>
+          <div data-controller="next">&rsaquo;</div>
+          <div data-controller="end">&raquo;</div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

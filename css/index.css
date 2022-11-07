@@ -1,0 +1,66 @@
+:root {
+  --primary-color: #2a2a30;
+  --secondary-color: #3a3a40;
+  --details-color: #00b1ff;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  background: var(--primary-color);
+}
+
+.c-pagination {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline !important;
+}
+
+/* HEADER */
+
+.c-pagination__header {
+  background: var(--secondary-color);
+  padding: .7rem 0;
+}
+
+.c-pagination__header h1 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #efefff;
+}
+
+/* MAIN */
+
+.c-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.c-main::-webkit-scrollbar {
+  width: .30rem;
+}
+
+.c-main::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, .1);
+}
